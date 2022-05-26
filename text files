@@ -1,0 +1,21 @@
+def read_file_content(filename):
+    filename =open('story.txt')
+    return (filename.read())
+
+
+
+read_file_content('filename')
+
+def count_word(txt):
+    txt = read_file_content('story.txt')
+    dic={}
+    for word in txt:
+        word = word.strip()
+        newfile = word.split(" ")
+        for i in newfile:
+            dic[i] = dic[i]+1
+        else:
+            dic[i] = 1
+    print(dic)
+
+count_word(txt)
